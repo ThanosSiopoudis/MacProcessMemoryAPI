@@ -1,1 +1,4 @@
 ProcessMemoryAPI/processmemoryapi.xcodeproj/project.xcworkspace
+ProcessMemoryAPI/build
+ProcessMemoryAPI/LibTest/LibTest.xcodeproj/xcuserdata
+ProcessMemoryAPI/processmemoryapi.xcodeproj/xcuserdata

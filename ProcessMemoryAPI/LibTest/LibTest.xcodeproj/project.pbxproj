@@ -207,6 +207,10 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___THANOSSIOPOUDIS___";
 				TargetAttributes = {
+					B10DB06918E4741C00CAA263 = {
+						DevelopmentTeam = J7255X77UZ;
+						ProvisioningStyle = Manual;
+					};
 					B10DB08A18E4741C00CAA263 = {
 						TestTargetID = B10DB06918E4741C00CAA263;
 					};
@@ -391,7 +395,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Athanasios Siopoudis (J7255X77UZ)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J7255X77UZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LibTest/LibTest-Prefix.pch";
 				INFOPLIST_FILE = "LibTest/LibTest-Info.plist";
@@ -408,7 +414,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Athanasios Siopoudis (J7255X77UZ)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J7255X77UZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LibTest/LibTest-Prefix.pch";
 				INFOPLIST_FILE = "LibTest/LibTest-Info.plist";
@@ -480,6 +488,7 @@
 				B10DB09D18E4741C00CAA263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B10DB09E18E4741C00CAA263 /* Build configuration list for PBXNativeTarget "LibTestTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +497,7 @@
 				B10DB0A018E4741C00CAA263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
