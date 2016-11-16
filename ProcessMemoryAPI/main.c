@@ -12,7 +12,7 @@
 
 vm_map_t GetProcessTaskForPID(pid_t process)
 {
-    vm_map_t *task;
+    vm_map_t task;
 	kern_return_t result = task_for_pid(current_task(), process, &task);
 	if (result != KERN_SUCCESS)
 	{
