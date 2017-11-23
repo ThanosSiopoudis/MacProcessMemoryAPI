@@ -28,5 +28,6 @@ boolean_t CanReadAtAddress(pid_t pid, mach_vm_address_t address, int size);
 boolean_t ZGFindASLRBaseAddress(ZGMemoryMap processTask, ZGMemoryAddress *addressPointer);
 uint64_t ZGGetASLROffset(vm_map_t pTask);
 uint64_t ZGGetASLROffsetBackup(ZGMemoryMap processTask);
+uint64_t AllocateProcessBytes(vm_map_t pTask, mach_vm_size_t size);
 
 #endif

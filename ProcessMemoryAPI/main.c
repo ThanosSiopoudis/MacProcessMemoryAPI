@@ -79,6 +79,17 @@ unsigned char *ReadProcessBytes(vm_map_t pTask, mach_vm_address_t address, int s
     return buffer;
 }
 
+uint64_t AllocateProcessBytes(vm_map_t pTask, mach_vm_size_t size) {
+    ZGMemoryAddress address = 0;
+    
+    int mach_result = mach_vm_allocate(pTask, &address, size, VM_FLAGS_ANYWHERE);
+    if (mach_result == KERN_SUCCESS) {
+        return (uint64_t)address;
+    }
+    
+    return 0;
+}
+
 boolean_t ZGFindASLRBaseAddress(ZGMemoryMap processTask, ZGMemoryAddress *addressPointer) {
     ZGMemoryAddress startAddress = 0x0;
     ZGMemorySize size;
@@ -122,7 +133,7 @@ uint64_t ZGGetASLROffsetBackup(ZGMemoryMap processTask) {
         return 0;
     }
     
-    return (uint32_t)(address + size);
+    return (uint64_t)(address + size);
 }
 
 uint32_t ReadInt32(pid_t pid, mach_vm_address_t address) {
